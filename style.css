@@ -6,6 +6,7 @@ body {
 textarea {
   width: 100%;
   height: 100%;
+  resize: none;
 }
 
 .wrapper {
@@ -17,17 +18,22 @@ textarea {
 
 .canvas-wrapper {
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 1 / 3;
 }
 
 .console-wrapper {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 3;
+}
+
+.controlls {
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .code-wrapper {
   grid-column: 2;
-  grid-row: 1 / 3;
+  grid-row: 2 / 4;
 }
 
 #canvas {
